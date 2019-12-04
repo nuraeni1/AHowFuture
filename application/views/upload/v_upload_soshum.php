@@ -25,14 +25,14 @@
                 <div class="row">
                     <div class="col-md-12">
                       	<div class="row" style="margin-left: 430px">
-							<?php echo $error;?>
-							<?php echo form_open_multipart('upload/soshum/aksi_upload');?>
-							<p style="color: red">SOSHUM</p>
-							<input type="file" name="berkas" />
-							<br />
-							<input type="submit" value="upload" />
-							</form>
-				        </div>
+							          <h1>SOSHUM</h1>
+                        <?php echo $error;?>
+                        <?php echo $message;?><br>
+                        <?php echo form_open_multipart('upload/soshum/do_upload');?>
+                        <input type="file" name="userfile" size="20" />
+                        <br>
+                        <input type="submit" value="upload" />
+				                </div>
                     </div>
                 </div>              
             </div>
