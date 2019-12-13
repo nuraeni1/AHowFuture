@@ -8,19 +8,23 @@
   <?php if($this->session->userdata('akses')=='1'):?>
       <li class="active"><a href="<?php echo base_url().'index.php/controller_page'?>">Home</a></li>
       <li><a href="<?php echo base_url().'index.php/universitas'?>">Universitas</a></li>
-      <li><a href="<?php echo base_url().'index.php/controller_page/input_latihan_soal'?>">Latihan Soal</a></li>
-      <li><a href="<?php echo base_url().'index.php/ctrl_admin/index'?>">Cek Siswa</a></li>
+      <li><a href="<?php echo base_url().'index.php/ctrl_admin/jurusan'?>">Jurusan</a></li>
+      <li><a href="<?php echo base_url().'index.php/ctrl_admin/datasiswabimbel'?>">Data Siswa Bimbel</a></li>
   <!--Akses Menu Untuk pengajar-->
   <?php elseif($this->session->userdata('akses')=='2'):?>
       <li class="active"><a href="<?php echo base_url().'index.php/controller_page'?>">Home</a></li>
       <li><a href="<?php echo base_url().'index.php/ctrl_pengajar'?>">SBMPTN</a></li>
-      <li><a href="<?php echo base_url().'index.php/ctrl_pengajar/tampil1'?>">Universitas</a></li> 
+      <li><a href="<?php echo base_url().'index.php/ctrl_pengajar/tampil1'?>">Universitas</a></li>
+      <li><a href="<?php echo base_url().'index.php/ctrl_pengajar/jurusan'?>">Jurusan</a></li> 
+      <li><a href="<?php echo base_url().'index.php/ctrl_pengajar/datasiswabimbel'?>">Data Siswa Bimbel</a></li>
       <li><a href="<?php echo base_url().'index.php/controller_page/chat'?>">Chat</a></li>
   <!--Akses Menu Untuk Siswa-->
   <?php elseif($this->session->userdata('akses')=='3'):?>
       <li class="active"><a href="<?php echo base_url().'index.php/controller_page'?>">Home</a></li>
       <li><a href="<?php echo base_url().'index.php/ctrl_siswa'?>">SBMPTN</a></li>
       <li><a href="<?php echo base_url().'index.php/ctrl_siswa/tampil1'?>">Universitas</a></li>
+      <li><a href="<?php echo base_url().'index.php/ctrl_siswa/jurusan'?>">Jurusan</a></li>
+      <li><a href="<?php echo base_url().'index.php/ctrl_siswa/datasiswabimbel'?>">Data Siswa Bimbel</a></li>
       <li><a href="<?php echo base_url().'index.php/controller_page/chat'?>">Chat</a></li>
   <?php endif;?>
   </ul>
