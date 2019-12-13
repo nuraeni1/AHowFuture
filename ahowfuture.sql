@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2019 at 01:13 AM
+-- Generation Time: Dec 13, 2019 at 05:01 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.2.12
 
@@ -77,7 +77,7 @@ INSERT INTO `tbl_siswa` (`id_siswa`, `nama_siswa`, `tgl_lahir`, `asal_sekolah`, 
 (1107, 'Friska', '1999-12-11', 'SMAN 3 Surabaya', 'Surabaya', 'Frizka@gmail.com', 118765, 3, 'Frizka', 'Frizka'),
 (1108, 'Yolanda', '1999-09-20', 'SMAN 3 MAlang', 'Malang', 'Yolanda@gmail.com', 114567, 2, 'Yolanda', 'Yolanda'),
 (1109, 'Citra', '1999-08-30', 'SMAN 4 Batu', 'Batu', 'Citra@gmail.com', 110900, 3, 'Citra', 'Citra'),
-(1110, 'Shofia', '1999-01-14', 'SMAN 4 Jakarta', 'Jakarta', 'Shofia@gmail.com', 113782, 2, 'Shofia', 'Shofia');
+(1110, 'Shofiaaa', '1999-01-14', 'SMAN 4 Jakarta', 'Jakarta', 'Shofia@gmail.com', 113782, 3, 'Shofia', 'Shofia');
 
 --
 -- Indexes for dumped tables
