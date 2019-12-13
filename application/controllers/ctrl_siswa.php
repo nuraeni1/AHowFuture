@@ -5,6 +5,8 @@ class ctrl_siswa extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		$this->load->model('m_datasiswa2');
+    	$this->load->model('m_jurusan');
+    	$this->load->model('m_datasiswa_bimbel');
 		$this->load->helper(array('form', 'url'));
 		if($this->session->userdata('akses') !== '3'){
         	$url=base_url();
@@ -20,4 +22,12 @@ class ctrl_siswa extends CI_Controller{
     	$data['universitas'] = $this->m_datasiswa2->tampil_data1()->result();
     	$this->load->view('upload/data1',$data);
   }
+	function jurusan(){
+	   	$data['jurusan'] = $this->m_jurusan->tampil_data()->result();
+	    $this->load->view('siswa/v_jurusan',$data);
+	}
+	function datasiswabimbel(){
+		$data['tbl_siswa'] = $this->m_datasiswa_bimbel->tampil_data()->result();
+		$this->load->view('siswa/v_datasiswa_bimbel',$data);
+	}
 }
